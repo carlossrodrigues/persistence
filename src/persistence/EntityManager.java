@@ -23,7 +23,8 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import persistence.QueryBuilder.QueryBuilder;
+import persistence.querybuilder.QueryBuilder;
+import persistence.util.Cache;
 
 public class EntityManager {
 	private JSONObject persistence;

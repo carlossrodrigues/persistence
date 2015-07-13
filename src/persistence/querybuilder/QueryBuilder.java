@@ -1,4 +1,4 @@
-package persistence.QueryBuilder;
+package persistence.querybuilder;
 
 import java.util.Map;
 

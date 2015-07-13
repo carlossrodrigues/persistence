@@ -13,6 +13,8 @@ import java.util.Scanner;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import persistence.util.JSONIndent;
+
 public class Persistence {
 
 	private JSONObject persistence;

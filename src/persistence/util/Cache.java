@@ -1,9 +1,10 @@
-package persistence;
+package persistence.util;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import persist.test.Pessoa;
+import persistence.Entity;
 
 public class Cache {
 	private Map<Class, Map<Integer, Entity>> map;
