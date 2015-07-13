@@ -91,9 +91,7 @@ public class Persistence {
 
 	public void defineType(Field field, JSONObject attr) throws JSONException {
 		Class type = field.getType();
-		
-		attr.put("class_type", type.getName());
-		
+				
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		if (type.isPrimitive() || Number.class.isAssignableFrom(type) || String.class.isAssignableFrom(type)) {
 			map.put("type", "primitive");
@@ -108,7 +106,7 @@ public class Persistence {
 			boolean add = false;
 			for(char c : field.getGenericType().toString().toCharArray()){
 				if(c == '<') add = true;
-				else if (c == '>') add = false;
+				else if (c == '>') break;
 				else if(add){
 					sb.append(c);
 				}
